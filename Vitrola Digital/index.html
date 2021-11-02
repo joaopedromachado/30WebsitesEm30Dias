@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="icon" href="./assets/disco-de-vinil.png">
+    <title>Vitrola Digital</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="https://joaopedromachado.github.io/30WebsitesEm30Dias/index.html">Início</a></li>
+            <li><a href="mailto:imjoaomachado@gmail.com" target="_blank">Contato</a></li>
+            <li><a href="https://github.com/joaopedromachado" target="_blank">Github</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div id="agulha">
+                <img src="./assets/braço.png" alt="Braço/Agulha">
+            </div>
+            <div id="vinil">
+                <img src="./assets/vinil.png" alt="Disco de vinil">
+            </div>
+            <div id="content_audio">
+                <audio>
+                    <source id="audio" src="./assets/audio/Yesterday (Remastered 2009).ogg" type="audio/ogg">
+                    <source src="./assets/audio/Yesterday (Remastered 2009).mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="control">
+                <img onclick="play()" src="./assets/play24px.png" alt="Botão começar">
+                <img id="pause_btn" onclick="pause()" src="./assets/pause24px.png" alt="Botão pausar">
+                <img onclick="stop()" src="./assets/stop.png" alt="Botão parar">
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

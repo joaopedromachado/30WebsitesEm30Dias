@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(235, 134, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 10px;
+    border-bottom: 2px solid sienna;
+}
+
+
+li a {
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container {
+    position: relative;
+    background-color: sienna;
+    border-radius: 30px;
+    border-bottom: 1rem solid rgb(128, 71, 45);
+    border-left: 0.5rem solid rgb(150, 83, 53);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    top: 100px;
+    width: 70vmin;
+    height: 50vmin;
+
+    display: flex;
+    justify-content: center;
+}
+
+#vinil img {
+    height: 90%;
+}
+
+
+#agulha img {
+    height: 90%;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.control img:hover {
+    cursor: pointer;
+}
