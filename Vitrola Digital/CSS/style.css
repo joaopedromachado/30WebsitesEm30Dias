@@ -45,6 +45,7 @@ main {
 
 #vinil img {
     height: 90%;
+    animation: rotate 10s linear infinite;
 }
 
 
@@ -62,4 +63,13 @@ main {
 
 .control img:hover {
     cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
