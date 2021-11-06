@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #36454f;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: rgb(14, 14, 14);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #f8f8ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.moon {
+    position: relative;
+    transform: scaleX(-1);
+    right: 3px;
+    bottom: 2px;
+}
+
+.sun {
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+}
+
+/* Light & Dark */
+
+.container {
+	position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10rem;
+    bottom: 0;
+    padding: 50px;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.content-light h1 {
+    color: #36454f;
+}
+
+.content-dark h1 {
+    color: #f8f8ff;
+}
+
+/* Header */
+
+header {
+    background-color: #36454f;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0 0 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    padding: 20px;
+    z-index: 1;
+}
+
+header.changeBackground {
+    background-color: #f8f8ff;
+}
+
+a.changeColor {
+    color: #36454f;
+}
+
+ul, li {
+    display: flex;
+    gap: 40px;
+    list-style: none
+}
+
+a {
+    color: #f8f8ff;
+    text-decoration: none;
+
+}
