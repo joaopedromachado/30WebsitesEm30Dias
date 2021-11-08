@@ -1,9 +1,13 @@
 
-var blue = document.querySelector(".blue").style.backgroundColor = "#3c4681";
-var yellow = document.querySelector(".yellow").style.backgroundColor = "#fcd202";
-var red = document.querySelector(".red").style.backgroundColor = "#d42627";
-var white = document.querySelector(".white").style.backgroundColor = "#f0f8ff";
+let cores;
 
+const colors = document.querySelectorAll(".color");
+
+colors.forEach((element) => {
+    element.addEventListener("click", ev => {
+        cores = ev.path[0].className.replace("color ", "");
+    })
+})
 
 document.addEventListener("DOMContentLoaded", () => {
     var squares = document.querySelectorAll(".square");
@@ -14,9 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function handleClick(ev) {
-    var element = ev.target;
-    var position = element.id
-
-    console.log(ev.target)
+    var element = ev.target
+    
+    element.style.background = cores
 }
+
+
 
