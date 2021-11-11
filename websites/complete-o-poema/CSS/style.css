@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Libre+Caslon+Text&display=swap');
+
+body {
+    background-image: url(../assets/pôr-do-sol.jpg);
+    background-color: #201c1b;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Libre Caslon Text', serif;
+    color: #f9ffe3;
+    
+    display: flex;
+}
+
+.titulo {
+    font-family: 'Goudy Bookletter 1911', serif;
+    text-align: center;
+}
+
+.words {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 20px;
+}
+
+.words span, .poema-content span {
+    font-size: 1.5rem
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.poema-content {
+    background-color: rgba(0, 0, 0, 0.400);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.poema-content p {
+    font-size: 1.5rem;
+}
+
+.poema-content span {
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(240, 248, 255, 0.555);
+}
+
+.highlight {
+    background-color: #f9ffe367;
+    opacity: 1;
+}
+
+.dragover {
+    background-color: rgba(36, 253, 36, 0.541);
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+/* Infos */
+
+header {
+    position: absolute;
+    background-color: #f9ffe3;
+    font-size: 1.5rem;
+    z-index: 1;
+    border-radius: 0 0 10px 0;
+
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+
+a {
+    color: #303030;
+}
+
+@media screen and (max-width: 1200px) {
+    .poema-content p {
+        font-size: 1rem;
+    }
+    .poema-content h1 {
+        font-size: 1.5rem;
+    }
+    .words span, .poema-content span {
+        font-size: 1rem
+    }
+    ul li:nth-of-type(2) {
+        display: none;
+    }
+}
