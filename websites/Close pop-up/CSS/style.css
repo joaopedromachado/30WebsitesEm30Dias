@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    line-height: 200px;
 }
 
 .container-modal {
@@ -90,4 +91,25 @@ i {
 .remove-container-button {
     opacity: 0;
     visibility: hidden;
+}
+
+
+/* INFO */
+
+header {
+    position: absolute;
+    background-color: lightgray;
+    border-radius: 0 0 10px 0;
+
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: #303030;
 }
