@@ -9,6 +9,12 @@
     <title>Contact form | João Pedro Machado</title>
 </head>
 <body>
+    <header>
+        <ul>
+            <li><a href="https://joaopedromachado.github.io/30WebsitesEm30Dias">Início</a></li>
+            <li><a href="https://github.com/joaopedromachado" target="_blank">Github</a></li>
+        </ul>
+    </header>
     <div class="contact-container">
         <div class="contact-content">
             <h1>Contact Us</h1>
@@ -16,10 +22,11 @@
             <form>
                 <input type="text" name="myname" placeholder="Name" autocomplete="off">
                 <input type="email" placeholder="E-mail" autocomplete="off">    
-                <textarea name="textarea" placeholder="Write here your message!"></textarea>
-                <button>Send</button>
+                <textarea type="text" name="textarea" placeholder="Write here your message!" rows="5" wrap="soft"></textarea>
+                <span id="button">Send</span>
             </form>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
