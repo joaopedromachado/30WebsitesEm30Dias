@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-content {
+    background-color: #f0e68c;
+    width: 50%;
+    padding: 20px;
+    border-left: 25px solid #c9c074;
+    border-bottom: 25px solid #b8b069;
+    border-radius: 10px;
+    box-shadow: -10px 15px 20px rgba(240, 248, 255, 0.5);
+}
+
+.contact-content h1, p {
+    text-align: center;
+}
+
+.contact-content p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px;
+}
