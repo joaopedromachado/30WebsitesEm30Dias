@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 :root {
     --cor-principal: #253455;
@@ -11,7 +11,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.5rem;
     color: aliceblue;
     
@@ -19,7 +19,7 @@ body {
 
 .container {
     background-color: var(--cor-principal);
-    padding: 20px;
+    padding: 15px 18px 0;
 }
 
 .container h2 {
@@ -35,7 +35,8 @@ body {
     padding: 3px;
 }
 .result-container span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 button {
@@ -60,7 +61,7 @@ button {
     display: flex;
     flex-direction: column;
     margin: 15px 0;
-    gap: 5px;
+    gap: 15px;
     user-select: none;
 }
 .setting {
