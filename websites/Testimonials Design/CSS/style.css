@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+body {
+    background-color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 0 15px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: #303030;
+}
+
+.avatar {
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px black;
+}
+
+.avatar h2 {
+    transform: translateY(105%)
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.text i {
+    position: relative;
+}
+
+.left {
+    float: left;
+    align-self: flex-start;
+}
+
+.right {
+    float: right;
+    align-self: flex-end;
+}
+
+p {
+    color: gray;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+
+/* INFO */
+
+header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: #303030;
+}
