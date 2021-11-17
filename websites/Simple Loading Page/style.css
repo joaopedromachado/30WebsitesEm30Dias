@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1 {
+    color: lightgray;
+}
+
+div {
+    border-radius: 50%;
+    border: 10px solid #202020;
+    border-left: 10px solid lightgray;
+    width: 100px;
+    height: 100px;
+    animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    to {transform: rotate(360deg);}
+    from {transform: rotate(0deg);}
+}
+
+
+/* INFO */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: aliceblue;
+}
