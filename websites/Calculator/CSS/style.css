@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+:root {
+    /* Background theme 1 */
+    --db-main: hsl(222, 26%, 31%);
+    --db-toggle: hsl(223, 31%, 20%);
+    --db-screen: hsl(224, 36%, 15%);
+    /* Keys theme 1 */
+    --db-key-bg: hsl(225, 21%, 49%);
+    --db-key-shdw: hsl(224, 28%, 35%);
+
+    --red-key-bg: hsl(6, 63%, 50%);
+    --dr-key-shdw: hsl(6, 70%, 34%);
+
+    --lt-key-bg: hsl(30, 25%, 89%);
+    --gorg-key-shdw: hsl(28, 16%, 65%);
+    /* Text theme 1 */
+    --dgb-txt: hsl(221, 14%, 31%);
+    --wht-txt: hsl(0, 0, 100%);
+}
+
+body {
+    background-color: var(--db-main);
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* THEME TOGGLER AREA */
+.preset-toggle-container {
+    color: var(--lt-key-bg);
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-right: 8px;
+    user-select: none;
+}
+
+.txt, .theme-area:nth-child(2) {
+    font-size: 12px;
+}
+
+.theme-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    color: var(--lt-key-bg);
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.theme-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.label {
+    background-color: var(--db-toggle);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.label .ball {
+    position: relative;
+    /* position: absolute; */
+    background-color: var(--red-key-bg);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(22px);
+}
+
+.white {
+    background-color: aliceblue;
+}
+
+
+/* CALC RESULT AREA */
+.result-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 86px;
+    background-color: var(--db-screen);
+    border-radius: 8px;
+    padding: 25px 20px 25px 20px;
+    margin: 15px 0 15px 0;
+}
+
+.result-content h1 {
+    color: var(--lt-key-bg);
+}
+
+/* KEYS AREA */
+.datas-content {
+    background-color: var(--db-toggle);
+    border-radius: 8px;
+    padding: 18px;
+    width: 100%;
+    user-select: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: dense;
+    gap: 12px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lt-key-bg);
+    color: var(--dgb-txt);
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--gorg-key-shdw);
+    padding: 5px 30px 5px 30px;
+}
+
+.key-tgl-ftsz {
+    font-size: 32px
+}
+
+#data-reset, #data-del {
+    background-color: var(--db-key-bg);
+    border-color: var(--db-key-shdw);
+    color: var(--lt-key-bg);
+}
+
+#data-equals {
+    background-color: var(--red-key-bg);
+    border-color: var(--dr-key-shdw);
+    color: var(--lt-key-bg);
+}
+
+
+/* SET POSITION KEYS WITH GRID PROPERTY */
+.key:nth-child(1) {
+    grid-area: 3;
+}
+.key:nth-child(2) {
+    grid-area: 3;
+}
+.key:nth-child(3) {
+    grid-area: 3;
+}
+.key:nth-child(4) {
+    grid-area: 2;
+}
+.key:nth-child(5) {
+    grid-area: 2;
+}
+.key:nth-child(6) {
+    grid-area: 2;
+}
+.key:nth-child(7) {
+    grid-area: 1;
+}
+.key:nth-child(8) {
+    grid-area: 1;
+}
+.key:nth-child(9) {
+    grid-area: 1;
+}
+
+.key:nth-child(10) {
+    grid-area: 4;
+    grid-column: 2;
+}
+.key:nth-child(11) {
+    grid-area:2;
+}
+.key:nth-child(12) {
+    grid-area: 3;
+}
+.key:nth-child(13) {
+    grid-area: 4;
+    grid-column: 4;
+}
+.key:nth-child(14) {
+    grid-area: 4;
+    grid-column: 3;
+}
+.key:nth-child(15) {
+    grid-area: 4;
+    grid-column: 1;
+}
+.key:nth-child(16) {
+    grid-area: 5;
+    grid-column: span 2;
+}
+.key:nth-child(17) {
+    grid-area: 1;
+}
+.key:nth-child(18) {
+    grid-area: 5;
+    grid-column: span 2;
+    padding: 12px 0 12px 0;
+}

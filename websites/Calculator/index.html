@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Calculator | João Pedro Machado</title>
+</head>
+<body>
+    <main>
+        <div class="preset-toggle-container txt">
+            <span>1</span>
+            <span>2</span>
+        </div>
+
+        <div class="theme-content">
+            <h2>calc</h2>
+            <div class="theme-area">
+                <label>THEME</label>
+                <input type="checkbox" class="checkbox" id="chkbox">
+                <label class="label" for="check">
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+        </div>
+        <div class="result-content">
+            <h1 id="result"></h1>
+        </div>
+        <div class="datas-content">
+            <div class="key numbers key-tgl-ftsz">1</div>
+            <div class="key numbers key-tgl-ftsz">2</div>
+            <div class="key numbers key-tgl-ftsz">3</div>
+            <div class="key numbers key-tgl-ftsz">4</div>
+            <div class="key numbers key-tgl-ftsz">5</div>
+            <div class="key numbers key-tgl-ftsz">6</div>
+            <div class="key numbers key-tgl-ftsz">7</div>
+            <div class="key numbers key-tgl-ftsz">8</div>
+            <div class="key numbers key-tgl-ftsz">9</div>
+            <div class="key numbers key-tgl-ftsz">0</div>
+            <div class="key data-operator key-tgl-ftsz">+</div>
+            <div class="key data-operator key-tgl-ftsz">-</div>
+            <div class="key data-operator key-tgl-ftsz">x</div>
+            <div class="key data-operator key-tgl-ftsz">/</div>
+            <div class="key data-operator key-tgl-ftsz">.</div>
+            <div class="key" id="data-reset">RESET</div>
+            <div class="key" id="data-del">DEL</div>
+            <div class="key" id="data-equals">=</div>
+        </div>
+    </main>
+    <script src="./scripts/settings.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
