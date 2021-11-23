@@ -127,6 +127,7 @@ body {
 }
 
 .key {
+    font-family: 'Spartan', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

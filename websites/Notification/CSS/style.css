@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
+body {
+    background-color: #c95a49;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    position: fixed;
+    bottom: 0;
+    right: -500px;
+}
+
+.modal-ntf {
+    background-color: aliceblue;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    color: #c95a49;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    animation: show 3s ease-in-out;
+}
+
+@keyframes show {
+    10%, 80% {transform: translateX(-500px);}
+}
+
+/* Style Effect Button */
+.btn-stl {
+    background-color: aliceblue;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #c95a49;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.500);
+    transition: 0.5s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.btn-stl:hover {
+    background-color: lightcoral;
+    border-radius: 0;
+    color: aliceblue;
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+
+/* INFO */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.2rem;
+    color: aliceblue;
+}

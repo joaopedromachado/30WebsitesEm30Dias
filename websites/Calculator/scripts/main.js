@@ -11,15 +11,31 @@ equals.addEventListener("click", calcEquals)
 
 keys.forEach(key => {
     key.addEventListener("click", (ev) => {
-        let operator = ev.target.innerText
-        res.innerHTML += operator
+        let operator = Number(ev.target.value)
+        res.innerHTML += eval()
+        console.log(operator)
     })
 })
 operators.forEach(operator => {
-    operator.addEventListener("click", function currentOperator() {
+    operator.addEventListener("click", function currentOperation() {
+        let typeOfOperator = operator.innerHTML
+
+
+        if (typeOfOperator == "+") {
+            n1 + n2
+        }else if (typeOfOperator == "-") {
+            res = n1 - n2
+        }else if (typeOfOperator == "x") {
+            res = n1 * n2
+        }else if (typeOfOperator == "/") {
+            res = n1 / n2
+        }
+        
         res.innerHTML += operator.innerHTML
+    
         console.log(`O Operador "${operator.innerHTML}" foi clicado`)
-    })
+    }
+    )
 })
 
 // Clear all
@@ -33,5 +49,5 @@ function deleteLastData() {
 }
 
 function calcEquals() {
-    
+   
 }
