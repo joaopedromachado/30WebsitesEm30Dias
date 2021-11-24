@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto:wght@700&display=swap');
+
+body {
+    background-color: lightgray;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    /* overflow: hidden; */
+}
+
+.cards {
+    display: flex;
+    grid-gap: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 200px;
+    height: 350px;
+}
+
+
+.title {
+    transform: translateY(15px);
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+
+.description {
+    font-family: 'Cardo', serif;
+    font-weight: bolder;
+    opacity: 0;
+    color: aliceblue;
+    padding: 10px;
+    height: 100%;
+    transition: 0.2s linear;
+}
+
+.description:hover {
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.009) 11.7%,
+      hsla(0, 0%, 0%, 0.034) 22.1%,
+      hsla(0, 0%, 0%, 0.072) 31.2%,
+      hsla(0, 0%, 0%, 0.123) 39.4%,
+      hsla(0, 0%, 0%, 0.182) 46.6%,
+      hsla(0, 0%, 0%, 0.249) 53.1%,
+      hsla(0, 0%, 0%, 0.320) 58.9%,
+      hsla(0, 0%, 0%, 0.394) 64.3%,
+      hsla(0, 0%, 0%, 0.468) 69.3%,
+      hsla(0, 0%, 0%, 0.540) 74.1%,
+      hsla(0, 0%, 0%, 0.607) 78.8%,
+      hsla(0, 0%, 0%, 0.668) 83.6%,
+      hsla(0, 0%, 0%, 0.721) 88.7%,
+      hsla(0, 0%, 0%, 0.762) 94.1%,
+      hsla(0, 0%, 0%, 0.790) 100%
+    );
+}
+
+
+button {
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.2s linear;
+}
+
+button:hover {
+    outline: 2px dashed yellow;
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+
+/* SET BACKGROUND IMAGES */
+.cards .card:nth-child(1){
+    background-image: url(../assets/comida1.jpg);
+}
+
+.cards .card:nth-child(2){
+    background-image: url(../assets/comida2.jpg);
+}
+
+.cards .card:nth-child(3){
+    background-image: url(../assets/comida3.jpg);
+}
