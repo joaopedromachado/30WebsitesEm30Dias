@@ -3,19 +3,24 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: lightcoral;
-    color: aliceblue;
     display: grid;
     place-content: center;
 }
 
 .container {
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 15px;
+
+    background:linear-gradient(to bottom right, #111 12.5%, #434343 25%, #111 50%, #434343 75%, #111 100%);
 }
 
 .key {
     background-color: brown;
+    color: #111;
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
     cursor: pointer;
@@ -28,13 +33,39 @@ body {
     height: 100px;
     width: 100px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-
+.key:nth-child(1) {
+    background-color: #3cb371;
+}
+.key:nth-child(2) {
+    background-color: #32cd32;
+}
+.key:nth-child(3) {
+    background-color: #6495ed;
+}
+.key:nth-child(4) {
+    background-color: #c7a900;
+}
+.key:nth-child(5) {
+    background-color: #fd5800;
+}
+.key:nth-child(6) {
+    background-color: #990606;
+}
+.key:nth-child(7) {
+    background-color: #003366;
+}
+.key:nth-child(8) {
+    background-color: #696969;
+}
+.key:nth-child(9) {
+    background-color: #4b0082;
+}
 
 .stl-keys {
-    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 15px #111;
 }
 
 
