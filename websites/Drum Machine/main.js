@@ -1,3 +1,14 @@
+// Get the audio musics
+const bd_md = document.getElementById("bd_md")
+const bd_ryth = document.getElementById("bd_ryth")
+const conga = document.getElementById("conga")
+const cow = document.getElementById("cow")
+const hh = document.getElementById("hh")
+const hho = document.getElementById("hho")
+const perc = document.getElementById("perc")
+const sd_ryth = document.getElementById("sd_ryth")
+const tom_ryth = document.getElementById("tom_ryth")
+// Get the html keys
 const keys = document.querySelectorAll(".key")
 const keyQ = document.querySelector(".keyQ")
 const keyW = document.querySelector(".keyW")
@@ -23,21 +34,49 @@ const C = 99;
 
 document.addEventListener("keypress", event => {
     let key = event.keyCode;
-    
-    key == Q ? keyQ.classList.add("stl-keys") : false
-    key == W ? keyW.classList.add("stl-keys") : false
-    key == E ? keyE.classList.add("stl-keys") : false
-    key == A ? keyA.classList.add("stl-keys") : false
-    key == S ? keyS.classList.add("stl-keys") : false
-    key == D ? keyD.classList.add("stl-keys") : false
-    key == Z ? keyZ.classList.add("stl-keys") : false
-    key == X ? keyX.classList.add("stl-keys") : false
-    key == C ? keyC.classList.add("stl-keys") : false
 
+    if (key == Q) {
+        keyQ.classList.add("stl-keys")
+        bd_md.play()
+    }
+    if (key == W) {
+        bd_ryth.play()
+        keyW.classList.add("stl-keys")
+    }
+    if (key == E) {
+        conga.play()
+        keyE.classList.add("stl-keys")
+    }
+    if (key == A) {
+        cow.play()
+        keyA.classList.add("stl-keys")
+    }
+    if (key == S) {
+        hh.play()
+        keyS.classList.add("stl-keys")
+    }
+    if (key == D) {
+        hho.play()
+        keyD.classList.add("stl-keys")
+    }
+    if (key == Z) {
+        perc.play()
+        keyZ.classList.add("stl-keys")
+    }
+    if (key == X) {
+        sd_ryth.play()
+        keyX.classList.add("stl-keys")
+    }
+    if (key == C) {
+        tom_ryth.play()
+        keyC.classList.add("stl-keys")
+    }
+   
 
     keys.forEach( evKey => {
         setTimeout(() => {
            evKey.classList.remove("stl-keys")
-        }, 250);
+           
+        }, 500);
     })
 })
