@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ken-burns {
+    background-image: url(../assets/images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: kenburns 40s ease-in-out infinite;
+}
+
+@keyframes kenburns {
+    15% {
+        transform: scale(2);
+        opacity: .8;
+    }
+    30% {
+        background-image: url(../assets/images/2.jpg);
+        transform: scale(1);
+        
+    }
+    85% {
+        background-image: url(../assets/images/3.jpg);
+        transform: scale(2);
+        opacity: 0,8;
+    }
+    100% {
+        background-image: url(../assets/images/4.jpg);
+        transform: scale(1);
+    }
+}
+
+
+/* INFO */
+
+header {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+header ul {
+    display: flex;
+    gap: 25px;
+}
+li a {
+    font-size: 1rem;
+    font-weight: bolder;
+
+    color: aliceblue;
+}
