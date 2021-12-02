@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    background-color: lightgray;
+}
+
+.game_board {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 15px;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_back, .card_front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+}
+
+.card_back {
+    transform: rotateY(180deg);
+    background-color: #1c2841;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card_front {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    background-color: #0067a5;
+    color: #111;
+}
+
+.restart {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: aliceblue;
+    font-family: 'Righteous', cursive;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.restart span {
+    font-size: 1.8rem;
+}
+
+#restart {
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    background-color: yellow;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 6px;
+    outline: none;
+    border-style: none;
+}
