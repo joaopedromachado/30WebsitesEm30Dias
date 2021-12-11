@@ -5,9 +5,8 @@ var minutesEl = document.getElementById("minutes");
 var secondsEl = document.getElementById("seconds");
 
 // Just set the date we are counting down to
-var countDownDate = new Date("Nov 30, 2021 00:00:00").getTime()
+var countDownDate = new Date("Feb 2, 2022 00:00:00").getTime()
 
-console.log(countDownDate)
 
 // Updante the count down every 1 second
 var start = setInterval(() => {
