@@ -82,3 +82,24 @@ body {
     outline: none;
     border-style: none;
 }
+
+/* INFO */
+
+header {
+    z-index: 1;
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: #111;
+}

@@ -205,3 +205,23 @@ footer span {
     opacity: 1;
     visibility: visible;
 }
+
+
+/* INFO */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: aliceblue;
+}

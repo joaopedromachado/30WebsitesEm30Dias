@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto:wght@700&display=swap');
 
 body {
-    background-color: lightgray;
+    background-color: rgb(170, 162, 162);
     display: grid;
     place-content: center;
     place-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .cards {
@@ -99,4 +99,24 @@ button:hover {
 
 .cards .card:nth-child(3){
     background-image: url(../assets/comida3.jpg);
+}
+
+/* INFO */
+
+header {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    color: aliceblue;
 }
