@@ -25,7 +25,7 @@ function handleClick() {
 
 blueScreen.addEventListener("click", addScreen)
 
-
+ 
 function addScreen() {
     modal.classList.remove("show-modal")
     removeAll.classList.add("remove-container-button")

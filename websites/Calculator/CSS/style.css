@@ -40,13 +40,20 @@ body {
 /* CALC RESULT AREA */
 .result-content{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-end;
     height: 86px;
     background-color: var(--db-screen);
     border-radius: 8px;
     padding: 25px 20px 25px 20px;
     margin: 15px 0 15px 0;
+    gap: 5px;
+}
+
+.result-content span {
+    color: var(--db-key-bg);
+    font-size: 0.8rem;
 }
 
 .result-content h1 {

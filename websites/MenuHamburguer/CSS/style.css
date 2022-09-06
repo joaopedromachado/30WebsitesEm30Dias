@@ -34,8 +34,8 @@ li > a {
 
 /* Remove o checkbox da tela */
 #checkbox-menu {
-    position: absolute;
-    opacity: 0;
+    /* position: absolute;
+    opacity: 0; */
 }
 
 label {
